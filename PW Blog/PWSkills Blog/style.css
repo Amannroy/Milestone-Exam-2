@@ -1,0 +1,130 @@
+/* Reset default margin and padding */
+body, h1, h2, p, button, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the header */
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+button#addBlogBtn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+/* Styling for the main content */
+#mainContent {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+
+.blog-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: calc(33.33% - 40px); /* Adjust as needed */ /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.blog-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.blog-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Styling for the add blog modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;  
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#addBlogForm label,
+#addBlogForm input,
+#addBlogForm button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#addBlogForm button[type="submit"] {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
