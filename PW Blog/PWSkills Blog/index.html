@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PWSkills Blog</title>
+</head>
+<body>
+    <header>
+        <h1>PWSkills Blog</h1>
+        <button id="addBlogBtn">+</button>
+    </header>
+    <main id="mainContent">
+        <div class="blog-container">
+            <div class="blog-box">
+                <img src="images/img-1.jpg" alt="Blog Image 1">
+                <h2>Blog Title: Demo Article</h2>
+                <p>Blog Description: This is a brief description of the first blog post.</p>
+                <button class="read-more" data-index="0">Read</button>
+            </div>
+            <div class="blog-box">
+                <img src="images/img-2.png" alt="Blog Image 2">
+                <h2>Blog Title: Demo Article</h2>
+                <p>Blog Description: This is a brief description of the second blog post.</p>
+                <button class="read-more" data-index="0">Read</button>
+            </div>
+            <div class="blog-box">
+                <img src="images/img-3.jpg" alt="Blog Image 3">
+                <h2>Blog Title: Demo Article</h2>
+                <p>Blog Description: This is a brief description of the third blog post.</p>
+                <button class="read-more" data-index="0">Read</button>
+            </div>
+    </main>
+    
+    
+    <div id="addBlogModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Blog</h2>
+            <form id="addBlogForm">
+                <label for="blogPost">Enter Blog Post URL:</label>
+                <input type="text" id="blogPost" name="blogPost" required>
+
+                <label for="blogTitle">Enter Blog Title:</label>
+                <input type="text" id="blogTitle" name="blogTitle" required>
+
+                <label for="blogDes">Enter Blog Description:</label>
+                <input type="text" id="blogDes" name="blogDes" required>
+
+                <label for="message">Write...</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Add Blog</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
